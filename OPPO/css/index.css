@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    color:#666;
+    text-decoration: none;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+#top,#header,#nav,#banner,#star,#accessory,#world,#serve,#after_sale,#footer{
+    height: 100px;
+    width: 100%;
+    border:1px solid #000;
+}
+.container{
+    
+}
