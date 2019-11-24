@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-size:14px;
 }
 ol,ul{
     list-style-type: none;
@@ -21,5 +22,233 @@ a{
     border:1px solid #000;
 }
 .container{
-    
+    width: 1280px;
+    border:1px solid #f00;
+    margin: 0 auto;
+}
+
+/* 顶部样式 */
+#top{
+    height: 5px;
+    background-color: #00925F;
+}
+
+#header{
+    height: 30px;
+    background-color: #2D2D2D;
+}
+#header .xlwb{
+    width: 20px;
+    height: 17px;
+    background:url("../img/icons.png") no-repeat -47px -95px;
+}
+#header .txwb{
+    width: 20px;
+    height:20px;
+    background:url("../img/icons.png") no-repeat -27px -92px;
+}
+#header .tel{
+    color: #00925F;
+}
+#header .header_left div{
+    float: left;
+    margin: 5px 15px 0px;
+}
+#header ul li{
+    float:left;
+    line-height: 30px;
+}
+#header li a{
+    color:#B2B2B2;
+    border-right:1px solid #B2B2B2;
+    padding:0 15px;
+}
+#header li a:hover{
+    color:#00925F;
+}
+#header .shop_car a{
+    border:none;
+}
+#header .shop_car span{
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    vertical-align: middle;
+    background:url("../img/icons.png") no-repeat 0 -96px;
+}
+#nav{
+    height: 90px;
+    background-color: #EEEEEE;
+}
+#nav li{
+    float:left;
+    line-height: 90px;
+    margin:0 15px; 
+}
+#nav li a{
+    color:#666666;
+    font-weight: bold;
+}
+#nav li a:hover{
+    color:#00925F;
+}
+
+/* 明星机型部分 */
+#star{
+    height: 700px;
+    background-color: #F2F2F2;
+}
+#star .star_top{
+    text-align:center;
+    margin:20px 0px;
+}
+#star ul{
+    width:1266px;
+    margin:10px auto;
+}
+#star li{
+    width:300px;
+    float: left;
+    border-bottom: 4px solid #DFDFDF;
+    transition:all .3s;
+}
+#star li:hover{
+    border-bottom:4px solid #4FB59D;
+    transform:translateY(-10px);
+}
+#star li img{
+    width:300px;
+}
+#star li h2{
+    text-align: center;
+    margin-top:10px;
+}
+#star li p{
+    text-align:center;
+    font-size:12px;
+    color:#C7C7C7;
+    margin:10px 0px;
+}
+#star .money{
+    color:#00925F;
+    font-size:14px;
+}
+#star li span{
+    display: inline-block;
+    width:13px;
+    height: 13px;
+    background:url("../img/icons-1.png") no-repeat -177px -1014px;
+    vertical-align: middle;
+}
+#star .line{
+    width: 0;
+    height: 450px;
+    border:1px solid #EAEAEA;
+    margin:0px 10px;
+}
+
+/* 精选配件部分 */
+#accessory{
+    height: 950px;
+    background-color: #F6F6F6;
+}
+#accessory .acc_top{
+    text-align:center;
+    margin:20px 0px;
+}
+#accessory .acc_main{
+    width:1100px;
+    margin:10px auto;
+}
+#accessory .acc_left{
+    width: 540px;
+    height: 950px;
+    /* border:2px solid #000; */
+}
+#accessory .acc_left>div{
+    float:left;
+    border-bottom:3px solid #EAEAEA;
+    margin:10px;
+    transition:all .3s;
+}
+#accessory .acc_left>div:hover{
+    border-bottom:3px solid #00925F;
+    transform:translateY(-10px);
+}
+#accessory .acc_left img{
+    width: 250px;
+}
+#accessory .acc_left>div:last-child img{
+    width:520px;
+}
+#accessory .acc_all{
+    width: 250px;
+    height: 250px;
+    border:3px solid #EAEAEA;
+    background-color: #fff;
+    padding:20px;
+    box-sizing:border-box;
+}
+#accessory .acc_all p:first-child{
+    text-align:center;
+    font-weight:bold;
+    font-size:14px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ccc;
+}
+#accessory .acc_all li{
+    float:left;
+    width: 100px;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+}
+#accessory .acc_all li:hover{
+    color:#00925F;
+}
+#accessory .acc_all .line{
+    width: 150px;
+    height: 0px;
+    border-bottom: 1px solid #ccc;
+    clear:both;
+    margin:15px auto;
+}
+#accessory .acc_all .acc{
+    text-align:center;
+}
+#accessory .acc_all .acc:hover{
+    color:#00925F;
+}
+#accessory .acc_all span{
+    display: inline-block;
+    width:13px;
+    height: 13px;
+    background:url("../img/icons-1.png") no-repeat -177px -1014px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#accessory .acc_right{
+    width: 540px; 
+}
+
+#accessory .acc_right>div{
+    float:left;
+    margin:10px;
+    border-bottom:3px solid #EAEAEA;
+    transition:all .3s;
+}
+#accessory .acc_right>div:hover{
+    border-bottom:3px solid #00925F;
+    transform:translateY(-10px);
+}
+#accessory .acc_right img{
+    width: 250px;
+}
+#accessory .acc_right>div:first-child img{
+    width:520px;
+    height:250px;
+}
+#accessory .acc_right>div:last-child img{
+    height:241px;
 }
