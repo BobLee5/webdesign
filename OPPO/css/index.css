@@ -151,6 +151,7 @@ a{
 #accessory{
     height: 950px;
     background-color: #F6F6F6;
+    overflow: hidden;
 }
 #accessory .acc_top{
     text-align:center;
@@ -251,4 +252,135 @@ a{
 }
 #accessory .acc_right>div:last-child img{
     height:241px;
+}
+
+/* 探索欧珀部分 */
+#world{
+    height: 700px;
+    background-color: #EAEAEA;
+}
+#world .world_top{
+    text-align: center;
+    margin: 20px 0px;
+}
+#world .world_main{
+    width:1220px;
+    margin: 10px auto;
+}
+#world .world_left{
+    width: 800px;
+}
+#world .world_left>div{
+    float:left;
+    margin:10px;
+    border-bottom:3px solid #F6F6F6;
+    transition:all .3s;
+}
+#world .world_left>div:hover{
+    border-bottom:3px solid #00925F;
+    transform: translateY(-10px);
+}
+#world .world_right{
+    width: 400px;
+    height: 566px;
+    background-color: #fff;
+    margin: 10px;
+}
+#world .world_right img{
+    height: 100px;
+    width: 120px;
+}
+#world .world_right .world_title{
+    height:60px;
+}
+#world .world_right .world_title div{
+    width: 200px;
+    height: 60px;
+    background-color: #EAEAEA;
+    text-align:center;
+    line-height: 60px;
+    float:left;
+    box-sizing: border-box;
+}
+#world .world_right .world_title div:hover{
+    border-top:3px solid #00925F;
+    background-color: #fff;
+    color:#00925F;
+}
+#world .world_right ul li{
+    background-color: #EAEAEA;
+    margin:20px 10px;
+}
+#world .world_right ul li dl{
+    width: 380px;
+    height: 100px;
+    position:relative;
+    box-sizing: border-box;
+}
+#world .world_right dl dt{
+    position:absolute;
+}
+#world .world_right dl dd{
+    position:absolute;
+    top:20px;
+    left: 140px;
+}
+#serve{
+    height: 100px;
+    background-color: #fff;
+}
+#serve dl{
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+#serve dt{
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#serve .dt1{
+    background:url("../img/icons.png") no-repeat 0px -45px;
+}
+#serve .dt2{
+    background:url("../img/icons.png") no-repeat -51px -45px;
+}
+#serve .dt3{
+    background:url("../img/icons.png") no-repeat -101px -45px;
+}
+#serve .dt4{
+    background:url("../img/icons.png") no-repeat -151px -45px;
+}
+#serve .dt5{
+    background:url("../img/icons.png") no-repeat -201px -45px;
+}
+#serve dl .dd1{
+    position: absolute;
+    top:30px;
+    left: 60px;
+    font-weight: bold;
+}
+#serve dl .dd2{
+    position: absolute;
+    top:51px;
+    left: 60px;
+    font-size:12px;
+    color:#aaa;
+}
+#serve li{
+    float: left;
+    margin: 0 10px;
+    transition: all .3s;
+}
+#serve li:hover{
+    transform: translateY(-10px);
+}
+#serve ul{
+    width: 1110px;
+    height: 100px;
+    margin:0 auto;
+    border-bottom:1px solid #666;
 }
