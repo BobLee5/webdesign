@@ -64,7 +64,10 @@ body{
 #nav a:active{
 	color: yellow;
 }
-
+#bannner{
+	height: 100px;
+	text-align: center;
+}
 
 
 #main{

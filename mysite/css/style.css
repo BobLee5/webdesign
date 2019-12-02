@@ -1,0 +1,384 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	background: #eee;
+}
+.left{
+	float: left
+}
+.right{
+	float: right;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+ol,ul{
+	list-style-type: none;
+}
+.fade{
+	opacity: 0;
+}
+.show{
+	opacity: 1;
+}
+#headr,#nav,#banner,#movie,#music,#tour,#text,#footer{
+	height: 100px;
+	width: 100%;
+/*	border:1px solid #000;*/
+}
+.container{
+	width: 1280px;
+/*	border:1px solid #f00;*/
+	margin: 0 auto;
+}
+/*顶部样式*/
+#header{
+	height:30px;
+	background-color: #2d2d2d;
+}
+#header .header_left div{
+	float: left;
+	margin:5px;
+}
+#header .xlwb{
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background: url("../images/icons-1.png") no-repeat -1px -883px;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+#header .txwb{
+	display: inline-block;
+	width: 15px;
+	height: 19px;
+	background: url("../images/icons-1.png") no-repeat -3px -910px;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+#header .rrw{
+	display: inline-block;
+	width: 18px;
+	height: 16px;
+	background: url("../images/icons-1.png") no-repeat -2px -940px;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+#header .qqkj{
+	display: inline-block;
+	width:20px;
+	height: 18px;
+	background: url("../images/icons-1.png") no-repeat 0px -854px;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+#header ul li{
+	float: left;
+	line-height:30px;
+}
+#header li a{
+	color:#b2b2b2;
+	border-right: 1px solid #b2b2b2;
+	padding: 0 15px;
+}
+#header .last a{
+	border:none;
+}
+#header li a:hover{
+	color: #81CEEA;
+}
+
+/*nav导航栏部分*/
+#nav{
+	height: 90px;
+	background-color: #eee;
+}
+#nav .logo{
+	float: left;
+}
+#nav .logo h1{
+	color: #81CEEA;
+	line-height: 90px;
+}
+#nav ul li{
+	float: left;
+	line-height: 90px; 
+}
+#nav ul li>a{
+	font-size: 18px;
+	padding: 5px;
+}
+#nav ul li>a:hover{
+	color:#81CEEA;
+}
+
+/*喜欢的电影部分*/
+#movie{
+	height:610px;
+	background-color: #f2f2f2;
+}
+#movie .movietop{
+	/*border: 1px solid #000;*/
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	padding: 15px 0px;
+}
+#movie ul{
+	width: 1240px;
+	margin: 0px auto;
+	/*border: 1px solid #0f0;*/
+}
+#movie li{
+	float: left;
+	width: 300px;
+	border-bottom: 4px solid #dfdfdf;
+	margin:0 5px;
+	text-align: center;
+	transition: all .3s;
+}
+
+#movie li:hover{
+	transform: translateY(-10px);
+}
+#movie ul li img{
+	width: 280px;
+	height: 420px;
+}
+#movie ul li h2{
+	text-align:center;
+	padding:5px 0px;
+
+}
+#movie ul li p{
+	text-align: center;
+	padding: 5px 0px;
+}
+/*常听的音乐部分*/
+#music{
+	height: 900px;
+	background-color: #f6f6f6;
+}
+#music .musictop{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	padding: 15px 0px;
+}
+#music .musicmain{
+	width: 1180px;
+	height: 700px;
+	/*background-color: #000;*/
+/*	border: 1px solid #000;*/
+	margin:0 auto;
+}
+#music .music_left{
+	width: 550px;
+}
+#music .music_left>div{
+	float: left;
+	transition: all .3s;
+}
+#music .music_left>div:hover{
+	transform: translateY(-10px);
+}
+#music .jj>img{
+	width: 280px;
+	height: 510px;
+	/*border-bottom: 2px solid #000;*/
+	padding-right: 15px;
+}
+#music .jay>img{
+	width: 245px;
+	height: 245px;
+	padding-bottom: 15px; 
+}
+#music .lyj>img{
+	width: 245px;
+	height: 245px;
+}
+#music .she>img{
+	width: 540px;
+	height: 260px;
+	padding-top: 10px;
+}
+
+#music .music_right{
+	width: 600px; 
+/*	border: 2px solid #000;*/
+}
+#music .music_right div{
+	float: left;
+	transition: all .3s;
+}
+#music .music_right div:hover{
+	transform: translateY(-10px);
+}
+#music .music_right .ts1>img{
+	width: 590px;
+	height: 245px;
+	padding-bottom: 15px;
+}
+#music .music_right .ts2>img{
+	width: 310px;
+	height: 514px;
+	padding-right: 20px;
+}
+#music .music_right .ad>img{
+	width: 255px;
+	height: 250px;
+	padding-bottom: 10px;
+}
+#music .music_right .ed>img{
+	width: 255px;
+	height: 250px;
+}
+
+/*旅行部分*/
+#tour{
+	height: 625px;
+	background-color: #fff;
+}
+#tour .tourtop{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	padding: 15px 0px;
+}
+#tour .tourplaces{
+	width:1200px;
+	margin: 0 auto;
+}
+#tour .tourplaces ul{
+	width: 1160px;
+	height: 550px;
+	margin: 0 auto;
+/*	border:1px solid #000;*/
+}
+#tour .tourplaces li{
+	float: left;
+	position: relative;
+}
+
+#tour .tourplaces li{
+	/*width: 300px;
+	height: 420px;*/
+	overflow: hidden;
+}
+#tour .tourplaces li:first-child>img{
+	width: 280px;
+	height: 512px;
+}
+
+#tour .tourplaces li:first-child>a{
+	display: block;
+	width: 253px;
+	height: 512px;
+	padding:0 14px;
+	position: absolute;
+	top:458px;
+	left:0px;
+/*	border:1px solid #000;*/
+	transition: all .5s;
+
+}
+
+/*#tour .tourplaces li:first-child>a:hover{
+	top:0px;
+	left:0px;
+	background-color:rgba(0,0,0,.5);
+}*/
+
+#tour .tourplaces li:first-child:hover a{
+	top:0px;
+	left:0px;
+	background-color:rgba(0,0,0,.5);
+}
+#tour .th4{
+	color: #fff;
+	margin-top: 26px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid hsla(0,0%,100%,.5);
+}
+#tour .shfont{
+	color: #fff;
+	padding: 10px 5px 0px 5px;
+}
+
+#tour .tourplaces li>img{
+	width: 280px;
+	height: 250px;	
+}
+#tour .tourplaces li:nth-child(-n+7):nth-child(n+2){
+	width: 280px;
+	height: 250px;
+	margin:0px 0px 12px 12px;
+}
+/*从第二个到第七个开始设置相同的样式*/
+#tour .tourplaces li:nth-child(-n+7):nth-child(n+2)>a{
+	display: block;
+	width: 250px;
+	height: 250px;
+	padding: 0 14px;
+	position: absolute;
+	top:190px;
+	left: 0px;
+/*	border: 1px solid #000;*/
+	transition: all .5s;
+}
+/*#tour .tourplaces li:nth-child(-n+7):nth-child(n+2)>a:hover{
+	top:0px;
+	left:0px;
+	background-color:rgba(0,0,0,.5);
+}
+*/
+#tour .tourplaces li:nth-child(-n+7):nth-child(n+2):hover a{
+	top:0px;
+	left:0px;
+	background-color:rgba(0,0,0,.5);
+}
+
+#text1{
+	height:320px;
+}
+#text1 h1{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	padding: 15px 0px;
+}
+#text1 .form1{
+	margin: 0 100px;
+}
+
+#footer{
+	height: 40px;
+	background-color: #2d2d2d;
+}
+#footer p{
+	color: #fff;
+	line-height: 40px;
+}
+#footer .footer_left span{
+	font-weight: bold;
+	font-size: 18px;
+	margin:0px 20px 0px 5px;
+}
+
+#footer .footer_right ul li{
+	float: left;
+	line-height: 40px;
+}
+#footer .footer_right ul li a{
+	color: #fff;
+	padding: 0 5px;
+}
+#footer .footer_right ul li a:hover{
+	color: #81CEEA;
+}
