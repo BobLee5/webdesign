@@ -1,0 +1,99 @@
+/* 初始化样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 总体容器宽度，并设置为浏览器窗口居中 */
+#places{
+    width: 1280px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+/* 设置无序列表的宽度高度和居中 */
+#places ul{
+    width: 91%;
+    height: 600px;
+    margin:10px auto;
+}
+/* 给每一个li加上浮动，并且作为父元素相对定位 */
+#places ul li{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+/* 给一个li的子元素a加上样式：转换为块元素，社遏制宽高度，背景默认透明，有一个初始的内边距 */
+#places ul li a{
+    display: block;
+    width: 280px;
+    height: 250px;
+    background-color:transparent;
+    padding: 0 14px;
+}
+/* 通用标题元素样式 */
+.h4title{
+    color: #fff;
+	padding-bottom: 15px;
+    border-bottom: 2px solid hsla(0,0%,100%,.5);
+    margin-top: 26px;
+}
+/* 通用文本样式 */
+.divtext{
+    color:#fff;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+/* 通用图片样式 */
+#places ul li img{
+    width: 280px;
+    height: 250px;
+}
+/* 单独设置第一个li元素样式 */
+#places ul li:first-child img{
+    width: 280px;
+    height: 512px;
+}
+/* a标签相对于li绝对定位 */
+#places ul li:first-child a{
+    width: 252px;
+    height:512px;
+    position: absolute;
+    top:453px;
+    left: 0px;
+    transition: all .5s;
+}
+/* 鼠标放在每一个li上，则产生过渡效果 */
+#places ul li:first-child:hover a{
+    top:0px;
+    left: 0px;
+    background-color:rgba(0,0,0,.5);
+}
+/* 给另外的六个li元素添加样式，*/
+#places ul li:nth-child(-n+7):nth-child(n+2){
+    width: 280px;
+    height: 250px;
+    margin: 0 0 12px 12px;
+}
+/* 同样是绝对定位 */
+#places ul li:nth-child(-n+7):nth-child(n+2) a{
+    width: 252px;
+    height: 250px;
+    position: absolute;
+    top:190px;
+    left:0px;
+    transition:all .5s;
+}
+/* 添加悬停效果 */
+#places ul li:nth-child(-n+7):nth-child(n+2):hover a{
+    top:0px;
+    left: 0px;
+    background-color: rgba(0,0,0,.5);
+}

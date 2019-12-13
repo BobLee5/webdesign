@@ -181,11 +181,11 @@ ol,ul{
 #music .music_left{
 	width: 550px;
 }
-#music .music_left>div{
+#music .music_left>div>div{
 	float: left;
 	transition: all .3s;
 }
-#music .music_left>div:hover{
+#music .music_left>div>div:hover{
 	transform: translateY(-10px);
 }
 #music .jj>img{
